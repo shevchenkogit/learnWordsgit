@@ -1,0 +1,12 @@
+<div class="formBoard">
+
+  <form class="form" [formGroup]="form" (submit)="SendAuth()">
+    <div class="title">Enter your information for logIn</div>
+    <input placeholder="email" class="input" formControlName="email" />
+    <input placeholder="password" class="input" formControlName="password" />
+    <button class="button" >logIn</button>
+  </form>
+</div>
+<div *ngIf="message" class="error">
+  wrong password or email!!!
+</div>

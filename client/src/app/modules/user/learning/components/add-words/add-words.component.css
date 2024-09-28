@@ -1,0 +1,84 @@
+.formBoard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    /*border: black solid 1px;*/
+    margin-top: 20%;
+}
+.input{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-top: 10px;
+    border-radius: 20px;
+    height: 30px;
+}
+.button{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-top: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+    height: 30px;
+
+}
+.button:hover{
+    animation: step-end;
+    background-color: forestgreen;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.title{
+    font-size: xxx-large;
+    font-family: cursive;
+}
+.error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    font-family: cursive;
+    font-size: xxx-large;
+}
+
+.aded{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    color: darkgreen;
+    font-family: cursive;
+}
+
+.formb{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /*border: black solid 1px;*/
+    /*margin-top: 10%;*/
+}
+.formq{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    /*border: black solid 1px;*/
+    /*margin-top: 10%;*/
+}

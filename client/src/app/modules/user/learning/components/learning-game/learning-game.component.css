@@ -1,0 +1,82 @@
+.mainCard{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 10%;
+}
+.card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 150px;
+  height: 150px;
+  font-family: cursive;
+  font-size: large;
+  margin-left: 5px;
+  border-radius: 20px;
+}
+.active{
+  background-color: darksalmon;
+}
+.out{
+  background-color: cadetblue;
+}
+.card:hover{
+  cursor: pointer;
+ background-color: darkgrey;
+}
+
+.form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  /*border: black solid 1px;*/
+}
+
+.button{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin-top: 10px;
+  border-radius: 20px;
+  transition: 0.5s;
+  height: 30px;
+
+}
+.button:hover{
+  animation: step-end;
+  background-color: forestgreen;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.formb{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+  width: 25%;
+  /*border: black solid 1px;*/
+  /*margin-top: 10%;*/
+}
+
+
+@media screen and (max-width: 992px) {
+  .button {
+    font-size: small;
+    height: 40px;
+  }
+}
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  .button {
+    font-size: smaller;
+    height: 40px;
+  }
+}

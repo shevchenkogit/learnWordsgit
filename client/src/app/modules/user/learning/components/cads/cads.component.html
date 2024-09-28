@@ -1,0 +1,19 @@
+<!--<app-one-word *ngFor="let word of words" [word]="word" > </app-one-word>-->
+
+<div class="main" *ngIf="words && !null">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h1>{{words[random].translate}}</h1>
+      </div>
+      <div class="flip-card-back">
+        <h1>{{words[random].original}}</h1>
+      </div>
+    </div>
+  </div>
+
+</div>
+<div class="main">
+  <button class="button" (click)="onClick()">next</button>
+</div>
+

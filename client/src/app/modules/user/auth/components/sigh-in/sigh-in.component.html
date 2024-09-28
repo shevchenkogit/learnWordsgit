@@ -1,0 +1,12 @@
+<div class="formBoard" >
+  <form class="form" [formGroup]="form" (submit)="registr()">
+    <div class="title">Enter your information for sighIn</div>
+    <input placeholder="name" class="input" formControlName="name"/>
+    <input placeholder="email" class="input" formControlName="email"/>
+    <input placeholder="password" class="input" formControlName="password"/>
+    <button class="button" >registr</button>
+  </form>
+</div>
+<div *ngIf="message" class="error">
+  this email already exist!!!
+</div>

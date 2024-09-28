@@ -1,0 +1,2 @@
+<!--<div class="rightSide"></div>-->
+<div *ngIf="word" class="rightSide {{correct===1 ? 'c' : '' }} {{correct===2 ? 'n' : '' }}" (click)="checkCorrect(word.id)">{{word.translate}}</div>

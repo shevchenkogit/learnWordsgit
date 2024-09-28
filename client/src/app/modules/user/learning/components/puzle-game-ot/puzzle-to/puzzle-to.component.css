@@ -1,0 +1,27 @@
+.rightSide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: solid 1px black;
+  width: 100%;
+  height: 30%;
+  margin: 5px;
+  margin-left: 10px;
+  border-radius: 30px;
+  transition: 1s;
+  font-size: x-large;
+}
+
+.rightSide:hover{
+  cursor: pointer;
+  background-color: darkgrey;
+  transition: 1s;
+}
+
+.c{
+  background-color: forestgreen;
+}
+.n{
+  background-color: red;
+}

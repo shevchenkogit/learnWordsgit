@@ -1,0 +1,7 @@
+<div *ngIf="newWords" class="main">
+  <div class="leftSide">{{newWords[one].original}}</div>
+  <div class="rightSide">
+    <app-game-to *ngFor="let word of newWords" [word]="word" [wordsA]="newWords" [number]="one" (newItemEmitter)="addItem($event) "></app-game-to>
+  </div>
+</div>
+<button class="button" *ngIf="s" (click)="next()">next</button>

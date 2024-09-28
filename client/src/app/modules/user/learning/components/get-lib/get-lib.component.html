@@ -1,0 +1,6 @@
+<div class="form">
+    <div class="formb">
+        <button class="button" (click)="backToMenu()">back to menu</button>
+    </div>
+</div>
+<app-one-word *ngFor="let word of words" [word]="word" (emiter)="emitF($event)"></app-one-word>

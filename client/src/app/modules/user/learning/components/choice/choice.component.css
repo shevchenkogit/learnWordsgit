@@ -1,0 +1,113 @@
+.main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10%;
+}
+.link{
+  margin-top: 30%;
+  width: 15%;
+  height: 100px;
+  border-radius: 30px;
+  background-color: cadetblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: cursive;
+  font-size: xx-large;
+  transition: 0.5s;
+  margin-right: 100px;
+}
+.link:hover{
+  animation: step-end;
+  background-color: forestgreen;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  align-items: center;
+  width: 100%;
+  /*border: black solid 1px;*/
+}
+
+.button{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin-top: 10px;
+  border-radius: 20px;
+  transition: 0.5s;
+  height: 30px;
+
+}
+.button:hover{
+  animation: step-end;
+  background-color: forestgreen;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.formb{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  align-items: center;
+  width: 20%;
+  /*border: black solid 1px;*/
+  /*margin-top: 10%;*/
+}
+
+
+@media screen and (max-width: 992px) {
+  .button {
+    font-size: small;
+  }
+  .title{
+    font-size: small;
+  }
+  .error{
+    font-size: x-large;
+  }
+  .formb{
+    width: 50%;
+  }
+  .link{
+    margin-top: 15%;
+    width: 15%;
+    height: 50px;
+    border-radius: 30px;
+    font-size: large;
+    transition: 0.5s;
+    margin-right: 50px;
+  }
+}
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  .button {
+    font-size: smaller;
+  }
+  .title{
+    font-size: smaller;
+  }
+  .error{
+    font-size: large;
+  }
+  .formb{
+    width: 50%;
+  }
+  .link{
+  margin-top: 30%;
+  width: 25%;
+  height: 30px;
+  border-radius: 30px;
+  font-size: smaller;
+  transition: 0.5s;
+  margin-right: 30px;}
+}

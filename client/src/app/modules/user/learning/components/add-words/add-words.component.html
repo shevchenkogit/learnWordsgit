@@ -1,0 +1,26 @@
+<div *ngIf="!added" class="formBoard">
+  <form class="form" [formGroup]="form" (submit)="onSubmit()">
+    <input class="input" placeholder="original" formControlName="original" />
+    <input class="input" placeholder="translate" formControlName="translate" />
+    <button class="button">add</button>
+  </form>
+    <div class="formb">
+      <div class="formq">
+        <button class="button" (click)="backToMenu()">back to menu</button>
+      </div>
+
+    </div>
+</div>
+
+<div *ngIf="message && !added" class="error">
+  can't be empty!!!
+</div>
+<div *ngIf="added" class="formBoard">
+  <div class="form">
+    <h1 class="aded">Word was added!!</h1>
+    <button class="button" (click)="addMore()">Add more</button>
+    <div class="formb">
+    <button class="button" (click)="backToMenu()">back to menu</button>
+    </div>
+  </div>
+</div>

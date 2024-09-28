@@ -1,0 +1,20 @@
+<div *ngIf="newWords" class="main">
+  <div class="mainWord" >{{newWords[one].translate}}</div>
+</div>
+
+
+<div class="choiceAria" *ngIf="puzzleWord || n">
+<!--  <div class="{{bul ? 'rT' : 'hE'}}">{{puzzleWord[i]}}</div>-->
+</div>
+
+<div class="choiceAria" *ngIf="puzzleWord">
+
+  <app-puzz *ngFor="let puzz of puzzleWord.split('').sort()" [puzzW]="puzz"  [pArr]="puzzleWord" [bul]="bul" (emitter)="checkLeter($event)"></app-puzz>
+
+</div>
+
+
+  <button class="button" *ngIf="n" (click)="next()">next</button>
+
+
+

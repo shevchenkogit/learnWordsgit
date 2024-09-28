@@ -1,0 +1,18 @@
+<div class="word">
+  <div class="origin">
+    <h1>{{word.original}}</h1>
+  </div>
+  <div class="translate">
+    <h1>{{word.translate}}</h1>
+  </div>
+  <div *ngIf="changeF">
+    <form [formGroup]="form" (submit)="registr()">
+      <input type="text" placeholder="{{word.original}}" formControlName="original"/>
+      <input type="text" placeholder="{{word.translate}}" formControlName="translate"/>
+      <button>save</button>
+    </form>
+  </div>
+  <button (click)="change(word.id)">change</button>
+
+  <button (click)="delete(word.id)">delete</button>
+</div>

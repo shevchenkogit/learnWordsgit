@@ -1,0 +1,12 @@
+<div *ngIf="newWordsO" class="main">
+  <div class="rightSide">
+
+
+    <app-puzzle-two-ot *ngFor="let word of newWordsO" [word]="word" [wordsA]="newWordsO" [correct]="n" (newItemEmitter)="addItem($event) "></app-puzzle-two-ot>
+  </div>
+  <div class="rightSide">
+    <app-puzzle-two-to *ngFor="let word of newWordsT" [word]="word" [wordsA]="newWordsT" [number]="one" (newItemEmitter)="addCheck($event) "></app-puzzle-two-to>
+  </div>
+</div>
+<!--<div *ngIf="!newWords" class="done">Поздоровляю ви порйшли всі слова в доній вправі!!</div>-->
+<button class="button" *ngIf="s" (click)="next()">next</button>

@@ -1,0 +1,35 @@
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.leftSide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xxx-large;
+  width: 30%;
+  height: 30%;
+}
+.rightSide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 5%;
+}
+.button{
+  border-radius: 30px;
+  width: 30%;
+  height: 30%;
+  font-size: xxx-large;
+}
+.button:hover{
+  cursor: pointer;
+  background-color: forestgreen;
+}
+.done{
+  font-size: xxx-large;
+  color: forestgreen;
+}

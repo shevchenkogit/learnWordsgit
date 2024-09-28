@@ -1,0 +1,96 @@
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+}
+.mainWord{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: xxx-large;
+  color: forestgreen;
+}
+.choiceAria{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.leter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: forestgreen;
+  border-radius: 30%;
+  font-size: xxx-large;
+  border: solid black 1px;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+}
+.antwort{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.antwortS{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30%;
+  font-size: xxx-large;
+  border: solid black 1px;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+}
+
+.hE{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30%;
+  font-size: xxx-large;
+  border: solid black 1px;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  transition: 0.5s;
+  color: white;
+}
+
+.rT{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30%;
+  font-size: xxx-large;
+  border: solid black 1px;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  transition: 0.5s;
+  background-color: forestgreen;
+
+}
+
+.button{
+  border-radius: 30px;
+  width: 30%;
+  height: 30%;
+  font-size: xxx-large;
+}
+.button:hover{
+  cursor: pointer;
+  background-color: forestgreen;
+}

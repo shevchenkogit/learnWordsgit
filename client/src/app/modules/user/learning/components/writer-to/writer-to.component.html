@@ -1,0 +1,23 @@
+<div *ngIf="newWords" class="main">
+  <div class="mainWord" >{{newWords[one].translate}}</div>
+
+</div>
+
+<div class="choiceAria" *ngIf="newWords">
+
+  <form [formGroup]="form" (submit)="onSubmit()">
+    <div class="inputDiv">
+      <input class="input" type="text" formControlName="word"/>
+
+    </div>
+    <button class="buttonA" >перевірити</button>
+
+  </form>
+
+</div>
+
+
+<button class="button" *ngIf="n" (click)="next()">next</button>
+
+
+

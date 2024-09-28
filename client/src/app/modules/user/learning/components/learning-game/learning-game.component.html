@@ -1,0 +1,16 @@
+<div class="form">
+  <div class="formb">
+    <button class="button" (click)="backToMenu()">back to menu</button>
+  </div>
+</div>
+<div class="mainCard">
+  <div routerLink="cards"  class="card" routerLinkActive="active">Cards</div>
+  <div routerLink="choiceTo"  class="card" routerLinkActive="active" >Find U -> A</div>
+  <div routerLink="choiceOt"  class="card" routerLinkActive="active">Find A -> U</div>
+  <div routerLink="puzzle"  class="card" routerLinkActive="active"> Collect it</div>
+  <div routerLink="puzzleOt"  class="card" routerLinkActive="active"> Puzzle U -> A</div>
+  <div routerLink="puzzleTo"  class="card" routerLinkActive="active"> Puzzle A -> U</div>
+  <div routerLink="write"  class="card" routerLinkActive="active"> Write it</div>
+</div>
+
+<router-outlet></router-outlet>

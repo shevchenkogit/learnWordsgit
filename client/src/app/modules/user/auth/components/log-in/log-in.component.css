@@ -1,0 +1,79 @@
+.formBoard{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  /*border: black solid 1px;*/
+  margin-top: 20%;
+}
+.input{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin-top: 10px;
+  border-radius: 20px;
+  height: 30px;
+}
+.button{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin-top: 10px;
+  border-radius: 20px;
+  transition: 0.5s;
+  height: 30px;
+
+}
+.button:hover{
+  animation: step-end;
+  background-color: forestgreen;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.title{
+  font-size: xxx-large;
+  font-family: cursive;
+}
+
+.error{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  font-family: cursive;
+  font-size: xxx-large;
+}
+
+@media screen and (max-width: 992px) {
+  .button {
+    font-size: x-large;
+  }
+  .title{
+    font-size: small;
+  }
+  .error{
+    font-size: x-large;
+  }
+}
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  .button {
+    font-size: large;
+  }
+  .title{
+    font-size: smaller;
+  }
+  .error{
+    font-size: large;
+  }
+}

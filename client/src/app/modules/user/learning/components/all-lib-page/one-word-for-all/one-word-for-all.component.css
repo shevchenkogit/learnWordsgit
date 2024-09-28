@@ -1,0 +1,22 @@
+.word{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    border: solid black 1px;
+}
+.origin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 5%;
+}
+.translate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 5%;
+}
